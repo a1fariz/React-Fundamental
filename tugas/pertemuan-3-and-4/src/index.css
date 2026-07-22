@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+
+  /* Slacc / Slack Design System Tokens */
+  --primary-aubergine: #4a154b;
+  --primary-press: #611f69;
+  --primary-tint: #592466;
+  --on-primary: #ffffff;
+
+  --ink: #1d1d1d;
+  --ink-mute: #696969;
+  --link-blue: #1264a3;
+  --link-hover: #3860be;
+
+  --canvas: #ffffff;
+  --canvas-cream: #f4ede4;
+  --canvas-lavender: #f9f0ff;
+  --surface-aubergine: #4a154b;
+
+  --hairline: #e6e6e6;
+  --hairline-strong: #000000;
+  --on-aubergine-mute: #d9bdde;
+
+  --semantic-success: #007a5a;
+  --semantic-error: #cc4117;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-xxl: 48px;
+  --radius-pill: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
