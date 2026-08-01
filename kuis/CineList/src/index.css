@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sb-starbucks: #006241;
+    --sb-accent: #00754A;
+    --sb-house: #1E3932;
+    --sb-uplift: #2b5148;
+    --sb-light: #d4e9e2;
+    --sb-cream: #f2f0eb;
+    --sb-ceramic: #edebe9;
+    --sb-gold: #cba258;
+    --sb-gold-lightest: #faf6ee;
+    --sb-text-black: rgba(0, 0, 0, 0.87);
+    --sb-text-black-soft: rgba(0, 0, 0, 0.58);
+    --sb-red: #c82014;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    background-color: var(--sb-cream);
+    color: var(--sb-text-black);
+  }
+}
+
+/* Starbucks Specific Utility Classes */
+.bg-sb-cream { background-color: #f2f0eb; }
+.bg-sb-ceramic { background-color: #edebe9; }
+.bg-sb-house { background-color: #1E3932; }
+.bg-sb-starbucks { background-color: #006241; }
+.bg-sb-accent { background-color: #00754A; }
+.bg-sb-light { background-color: #d4e9e2; }
+.bg-sb-gold { background-color: #cba258; }
+.bg-sb-gold-lightest { background-color: #faf6ee; }
+
+.text-sb-starbucks { color: #006241; }
+.text-sb-accent { color: #00754A; }
+.text-sb-house { color: #1E3932; }
+.text-sb-gold { color: #cba258; }
+.text-sb-black { color: rgba(0, 0, 0, 0.87); }
+.text-sb-black-soft { color: rgba(0, 0, 0, 0.58); }
+
+.border-sb-accent { border-color: #00754A; }
+.border-sb-starbucks { border-color: #006241; }
+.border-sb-house { border-color: #1E3932; }
+.border-sb-gold { border-color: #cba258; }
+.border-sb-light { border-color: #d4e9e2; }
+
+/* Starbucks Card Elevation Shadow */
+.sb-card-shadow {
+  box-shadow: 0px 0px 0.5px 0px rgba(0,0,0,0.14), 0px 1px 1px 0px rgba(0,0,0,0.24);
+}
+
+.sb-card-shadow-hover:hover {
+  box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.12), 0px 1px 3px 0px rgba(0,0,0,0.18);
+}
+
+/* Frap Floating Button Layered Shadow Stack */
+.sb-frap-shadow {
+  box-shadow: 0 0 6px rgba(0,0,0,0.24), 0 8px 12px rgba(0,0,0,0.14);
+}
+
+.sb-frap-shadow:active {
+  box-shadow: 0 0 6px rgba(0,0,0,0.24), 0 0px 0px rgba(0,0,0,0);
+}
+
+/* Starbucks Global Nav Shadow Stack */
+.sb-nav-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.06), 0 0 2px rgba(0,0,0,0.07);
+}
+
+/* Micro-interaction: Active Press Scale */
+.sb-pill-btn {
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.sb-pill-btn:active {
+  transform: scale(0.95);
+}
