@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    selection-background-color: #ff385c;
+    selection-color: #ffffff;
+  }
+}
+
+/* Airbnb Rausch brand custom utility styles */
+.bg-rausch {
+  background-color: #ff385c;
+}
+.bg-rausch-active {
+  background-color: #e00b41;
+}
+.text-rausch {
+  color: #ff385c;
+}
+.border-rausch {
+  border-color: #ff385c;
+}
+
+/* Custom subtle light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+}
