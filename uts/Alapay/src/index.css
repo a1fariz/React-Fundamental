@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-brand-900: #12342d;
+  --color-brand-800: #173f36;
+  --color-brand-700: #006241;
+  --color-brand-600: #00754a;
+  --color-brand-100: #dceee8;
+  --color-accent: #c99b41;
+  --color-surface: #ffffff;
+  --color-canvas: #f7f5f0;
+}
+
+:root {
+  font-family: var(--font-sans);
+  background: #f7f5f0;
+  color: #1c1917;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.text-display-xl {
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.text-display-lg {
+  font-size: clamp(2.25rem, 4.8vw, 4.25rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.text-body-md {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at top left, rgba(0, 117, 74, 0.10), transparent 28rem),
+    linear-gradient(180deg, #fbfaf7 0%, #f7f5f0 52%, #ffffff 100%);
+}
+
+.sb-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(214, 211, 209, 0.85);
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 18px 42px rgba(15, 23, 42, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.sb-card:hover {
+  border-color: rgba(0, 117, 74, 0.22);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.10);
+  transform: translateY(-2px);
+}
+
+.sb-card-dark {
+  background: #12342d;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 18px 42px rgba(15, 23, 42, 0.12);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.sb-card-dark:hover {
+  border-color: rgba(201, 155, 65, 0.4);
+  box-shadow: 0 18px 48px rgba(18, 52, 45, 0.25);
+  transform: translateY(-2px);
+}
+
+.sb-btn {
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sb-btn:active {
+  transform: scale(0.98);
+}
+
+.sb-btn-primary {
+  background: #12342d;
+  color: #ffffff;
+  border: 1px solid #12342d;
+}
+
+.sb-btn-primary:hover {
+  background: #00754a;
+  border-color: #00754a;
+  box-shadow: 0 12px 26px rgba(0, 117, 74, 0.22);
+}
+
+.sb-btn-outline {
+  background: #ffffff;
+  color: #12342d;
+  border: 1px solid #d6d3d1;
+}
+
+.sb-btn-outline:hover {
+  border-color: #00754a;
+  color: #00754a;
+}
+
+.sb-btn-inverted {
+  background: #ffffff;
+  color: #12342d;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.frap-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: #12342d;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 34px rgba(18, 52, 45, 0.24);
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.frap-btn:hover {
+  background: #00754a;
+  transform: translateY(-2px);
+}
+
+.sb-nav-shadow {
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.08), 0 10px 32px rgba(15, 23, 42, 0.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c1b7;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00754a;
+}
+
+/* ─── Animations ─────────────────────────────────────────── */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeSlideUp 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Stagger delays for product grid cards */
+.card-stagger:nth-child(1)  { animation-delay: 0ms; }
+.card-stagger:nth-child(2)  { animation-delay: 50ms; }
+.card-stagger:nth-child(3)  { animation-delay: 100ms; }
+.card-stagger:nth-child(4)  { animation-delay: 150ms; }
+.card-stagger:nth-child(5)  { animation-delay: 200ms; }
+.card-stagger:nth-child(6)  { animation-delay: 250ms; }
+.card-stagger:nth-child(7)  { animation-delay: 300ms; }
+.card-stagger:nth-child(8)  { animation-delay: 350ms; }
+.card-stagger:nth-child(9)  { animation-delay: 400ms; }
+.card-stagger:nth-child(10) { animation-delay: 450ms; }
+.card-stagger:nth-child(11) { animation-delay: 500ms; }
+.card-stagger:nth-child(12) { animation-delay: 550ms; }
+.card-stagger:nth-child(13) { animation-delay: 600ms; }
+.card-stagger:nth-child(14) { animation-delay: 650ms; }
+.card-stagger:nth-child(15) { animation-delay: 700ms; }
+.card-stagger:nth-child(16) { animation-delay: 750ms; }
