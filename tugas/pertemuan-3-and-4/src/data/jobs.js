@@ -10,6 +10,7 @@ export const jobsData = [
     category: "Frontend",
     salary: "Rp8.000.000 - Rp13.000.000",
     salaryNumeric: 8000000,
+    status: true,
     postedDate: "2 jam yang lalu",
     experience: "2 - 4 Tahun",
     tags: ["React", "JavaScript", "Vite", "CSS3", "Rest API"],
@@ -44,6 +45,7 @@ export const jobsData = [
     category: "Backend",
     salary: "Rp10.000.000 - Rp16.000.000",
     salaryNumeric: 10000000,
+    status: true,
     postedDate: "5 jam yang lalu",
     experience: "3+ Tahun",
     tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Redis"],
@@ -78,6 +80,7 @@ export const jobsData = [
     category: "UI/UX",
     salary: "Rp9.000.000 - Rp14.000.000",
     salaryNumeric: 9000000,
+    status: false,
     postedDate: "1 hari yang lalu",
     experience: "1 - 3 Tahun",
     tags: ["Figma", "Design System", "Wireframing", "Prototyping", "User Research"],
@@ -112,6 +115,7 @@ export const jobsData = [
     category: "Mobile",
     salary: "Rp8.500.000 - Rp13.500.000",
     salaryNumeric: 8500000,
+    status: true,
     postedDate: "2 hari yang lalu",
     experience: "2+ Tahun",
     tags: ["React Native", "TypeScript", "Redux Toolkit", "iOS", "Android"],
@@ -146,6 +150,7 @@ export const jobsData = [
     category: "DevOps",
     salary: "Rp12.000.000 - Rp18.000.000",
     salaryNumeric: 12000000,
+    status: true,
     postedDate: "3 hari yang lalu",
     experience: "3 - 5 Tahun",
     tags: ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD"],
@@ -180,6 +185,147 @@ export const jobsData = [
     category: "Fullstack",
     salary: "Rp9.500.000 - Rp15.000.000",
     salaryNumeric: 9500000,
+    status: false,
+    postedDate: "3 hari yang lalu",
+    experience: "2 - 4 Tahun",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    description: "Kami membutuhkan Fullstack Web Developer yang dapat menangani sisi frontend dan backend secara holistik untuk produk SaaS berbasis cloud terbaru.",
+    responsibilities: [
+      "Mengembangkan fitur end-to-end dari UI hingga database.",
+      "Mengimplementasikan autentikasi user, otorisasi, dan enkripsi data.",
+      "Menulis kode bermutu tinggi yang teruji dengan automated unit test.",
+      "Optimasi sistem web dari sisi client-side maupun server-side."
+    ],
+    requirements: [
+      "Menguasai MERN Stack (MongoDB, Express, React, Node.js).",
+      "Pengalaman membangun REST API dan sistem WebSockets.",
+      "Memahami responsive web design dan Web Accessibility (a11y).",
+      "Sikap proaktif, komunikatif, dan mandiri dalam tim remote."
+    ],
+    benefits: [
+      "Kerja 100% Remote dari mana saja",
+      "Tunjangan Internet & Workspace Rp1.000.000/bln",
+      "Bonus Tahunan & THR",
+      "Learning allowance buku & kursus online"
+    ]
+  },
+    {
+    id: 7,
+    title: "web developer",
+    company: "Inovasi Karya Studio",
+    logoText: "IKS",
+    logoBg: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+    location: "Yogyakarta",
+    workType: "Remote",
+    category: "Fullstack",
+    salary: "Rp9.500.000 - Rp15.000.000",
+    salaryNumeric: 9500000,
+    status: true,
+    postedDate: "3 hari yang lalu",
+    experience: "2 - 4 Tahun",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    description: "Kami membutuhkan Fullstack Web Developer yang dapat menangani sisi frontend dan backend secara holistik untuk produk SaaS berbasis cloud terbaru.",
+    responsibilities: [
+      "Mengembangkan fitur end-to-end dari UI hingga database.",
+      "Mengimplementasikan autentikasi user, otorisasi, dan enkripsi data.",
+      "Menulis kode bermutu tinggi yang teruji dengan automated unit test.",
+      "Optimasi sistem web dari sisi client-side maupun server-side."
+    ],
+    requirements: [
+      "Menguasai MERN Stack (MongoDB, Express, React, Node.js).",
+      "Pengalaman membangun REST API dan sistem WebSockets.",
+      "Memahami responsive web design dan Web Accessibility (a11y).",
+      "Sikap proaktif, komunikatif, dan mandiri dalam tim remote."
+    ],
+    benefits: [
+      "Kerja 100% Remote dari mana saja",
+      "Tunjangan Internet & Workspace Rp1.000.000/bln",
+      "Bonus Tahunan & THR",
+      "Learning allowance buku & kursus online"
+    ]
+  },
+    {
+    id: 8,
+    title: "Java developer",
+    company: "Inovasi Karya Studio",
+    logoText: "IKS",
+    logoBg: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+    location: "Yogyakarta",
+    workType: "Remote",
+    category: "Fullstack",
+    salary: "Rp9.500.000 - Rp15.000.000",
+    salaryNumeric: 9500000,
+    status: false,
+    postedDate: "3 hari yang lalu",
+    experience: "2 - 4 Tahun",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    description: "Kami membutuhkan Fullstack Web Developer yang dapat menangani sisi frontend dan backend secara holistik untuk produk SaaS berbasis cloud terbaru.",
+    responsibilities: [
+      "Mengembangkan fitur end-to-end dari UI hingga database.",
+      "Mengimplementasikan autentikasi user, otorisasi, dan enkripsi data.",
+      "Menulis kode bermutu tinggi yang teruji dengan automated unit test.",
+      "Optimasi sistem web dari sisi client-side maupun server-side."
+    ],
+    requirements: [
+      "Menguasai MERN Stack (MongoDB, Express, React, Node.js).",
+      "Pengalaman membangun REST API dan sistem WebSockets.",
+      "Memahami responsive web design dan Web Accessibility (a11y).",
+      "Sikap proaktif, komunikatif, dan mandiri dalam tim remote."
+    ],
+    benefits: [
+      "Kerja 100% Remote dari mana saja",
+      "Tunjangan Internet & Workspace Rp1.000.000/bln",
+      "Bonus Tahunan & THR",
+      "Learning allowance buku & kursus online"
+    ]
+  },
+    {
+    id: 9,
+    title: "React developer",
+    company: "Inovasi Karya Studio",
+    logoText: "IKS",
+    logoBg: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+    location: "Yogyakarta",
+    workType: "Remote",
+    category: "Fullstack",
+    salary: "Rp9.500.000 - Rp15.000.000",
+    salaryNumeric: 9500000,
+    status: true,
+    postedDate: "3 hari yang lalu",
+    experience: "2 - 4 Tahun",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    description: "Kami membutuhkan Fullstack Web Developer yang dapat menangani sisi frontend dan backend secara holistik untuk produk SaaS berbasis cloud terbaru.",
+    responsibilities: [
+      "Mengembangkan fitur end-to-end dari UI hingga database.",
+      "Mengimplementasikan autentikasi user, otorisasi, dan enkripsi data.",
+      "Menulis kode bermutu tinggi yang teruji dengan automated unit test.",
+      "Optimasi sistem web dari sisi client-side maupun server-side."
+    ],
+    requirements: [
+      "Menguasai MERN Stack (MongoDB, Express, React, Node.js).",
+      "Pengalaman membangun REST API dan sistem WebSockets.",
+      "Memahami responsive web design dan Web Accessibility (a11y).",
+      "Sikap proaktif, komunikatif, dan mandiri dalam tim remote."
+    ],
+    benefits: [
+      "Kerja 100% Remote dari mana saja",
+      "Tunjangan Internet & Workspace Rp1.000.000/bln",
+      "Bonus Tahunan & THR",
+      "Learning allowance buku & kursus online"
+    ]
+  },
+    {
+    id: 10,
+    title: "C# developer",
+    company: "Inovasi Karya Studio",
+    logoText: "IKS",
+    logoBg: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+    location: "Yogyakarta",
+    workType: "Remote",
+    category: "Fullstack",
+    salary: "Rp9.500.000 - Rp15.000.000",
+    salaryNumeric: 9500000,
+    status: false,
     postedDate: "3 hari yang lalu",
     experience: "2 - 4 Tahun",
     tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],

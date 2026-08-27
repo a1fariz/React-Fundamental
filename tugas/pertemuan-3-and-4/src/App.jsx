@@ -6,7 +6,6 @@ import JobModal from './components/JobModal';
 import About from './components/About';
 import Footer from './components/Footer';
 import { jobsData } from './data/jobs';
-import './App.css';
 
 function App() {
   const [jobs] = useState(jobsData);
@@ -54,7 +53,7 @@ function App() {
   }, [jobs, activeTab, savedJobIds, selectedCategory, searchTerm]);
 
   return (
-    <div className="app-wrapper">
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans antialiased">
       {/* Header Component */}
       <Header 
         bookmarkCount={savedJobIds.length}
@@ -65,7 +64,7 @@ function App() {
       {/* Main Page Routing View */}
       {activeTab === 'about' ? (
         /* About Us Page */
-        <main className="main-content">
+        <main className="flex-1">
           <About onExploreJobs={() => setActiveTab('explore')} />
         </main>
       ) : (
@@ -81,7 +80,7 @@ function App() {
             />
           )}
 
-          <main className="main-content">
+          <main className="flex-1">
             <JobList 
               jobs={filteredJobs}
               savedJobIds={savedJobIds}

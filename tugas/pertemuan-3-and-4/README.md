@@ -29,8 +29,7 @@ src/
  ├── data/
  │    └── jobs.js       --> Dataset lowongan kerja realistic
  ├── App.jsx            --> Komponen utama & alur navigasi tab
- ├── App.css            --> Styling CSS komponen
- └── index.css          --> Variable CSS global & reset style
+ └── index.css          --> Styling global & Tailwind CSS v4 import
 ```
 
 ---
@@ -52,7 +51,7 @@ src/
 - **Build Tool**: Vite
 - **Package Manager**: pnpm
 - **Icon Set**: lucide-react
-- **Styling**: Vanilla CSS
+- **Styling**: Tailwind CSS v4
 
 ---
 
